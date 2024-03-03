@@ -1,8 +1,6 @@
 package com.yunshang.oa.result;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * @author: qhy

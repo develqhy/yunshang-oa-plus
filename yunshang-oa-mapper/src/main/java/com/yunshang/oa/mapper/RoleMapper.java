@@ -8,4 +8,5 @@ import com.yunshang.oa.entity.Role;
  * @create 2024-03-03 13:33
  */
 public interface RoleMapper extends BaseMapper<Role> {
+
 }
