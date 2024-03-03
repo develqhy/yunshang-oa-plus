@@ -1,0 +1,21 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 9900
+
+# 数据源的配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://hadoop000:3306/yunshang_oa?serverTimezone=GMT%2b8&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: Qhy123456
+
+#spring:
+#  redis:
+#    host: hadoop000
+#    port: 6379
+#    password: Lfy123456
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
