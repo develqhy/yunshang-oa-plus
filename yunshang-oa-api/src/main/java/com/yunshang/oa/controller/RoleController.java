@@ -1,6 +1,7 @@
 package com.yunshang.oa.controller;
 
 import com.yunshang.oa.entity.Role;
+import com.yunshang.oa.result.CommonResult;
 import com.yunshang.oa.service.RoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -25,8 +26,9 @@ public class RoleController {
 
     @ApiOperation("查询所有角色")
     @GetMapping("/get/all")
-    public List<Role> queryAll() {
+    public CommonResult queryAll() {
 
-        return roleService.list();
+        List<Role> list = roleService.list();
+        return CommonResult.ok(list);
     }
 }

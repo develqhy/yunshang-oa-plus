@@ -1,5 +1,7 @@
 package com.yunshang.oa.result;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -8,13 +10,14 @@ import lombok.Data;
  * @description: 统一返回结果对象
  */
 @Data
+@ApiModel("CommonResult对象")
 public class CommonResult<T> {
 
-    // 响应给前端的状态码
+    @ApiModelProperty(value = "响应状态码",dataType = "Integer",required = true)
     private Integer code;
-    // 响应给前端的提示信息
+    @ApiModelProperty(value = "响应提示信息",dataType = "String",required = true)
     private String msg;
-    // 响应给前端的数据
+    @ApiModelProperty(value = "响应数据",dataType = "T")
     private T data;
 
     private CommonResult() {}
