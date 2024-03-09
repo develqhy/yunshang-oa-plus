@@ -3,7 +3,6 @@ package com.yunshang.oa.config;
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -15,10 +14,9 @@ import springfox.documentation.spring.web.plugins.Docket;
 /**
  * @author: qhy
  * @date: 2024-02-29 11:30
- * 启动应用后访问地址: http://localhost:9900/swagger-ui/index.html 或 http://localhost:9900/doc.html
+ * 启动应用后访问地址: http://localhost:9900/doc.html
  */
 @Configuration
-@EnableWebMvc
 @EnableKnife4j
 public class Swagger3Config {
 
